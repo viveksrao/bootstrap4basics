@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-dashboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Final-images" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-dashboard">
+            <g id="switch-7" transform="translate(0.000000, 13.000000)">
+                <path d="M42.4137931,35 L17.5862069,35 C7.9137931,35 0,27.125 0,17.5 L0,17.5 C0,7.875 7.9137931,0 17.5862069,0 L42.4137931,0 C52.0862069,0 60,7.875 60,17.5 L60,17.5 C60,27.125 52.0862069,35 42.4137931,35 Z" id="Shape" fill="#38454F" fill-rule="nonzero"></path>
+                <ellipse id="Oval" fill="#E0E1E2" fill-rule="nonzero" cx="17.5862069" cy="17.5" rx="12.4137931" ry="12.3529412"></ellipse>
+                <path d="M37.2413793,17.5 L41.3793103,21.6176471" id="Shape" stroke="#61B872" stroke-width="2.06896552" stroke-linecap="round"></path>
+                <path d="M41.3793103,21.6176471 L49.6551724,13.3823529" id="Shape" stroke="#61B872" stroke-width="2.06896552" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
