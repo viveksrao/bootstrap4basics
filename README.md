@@ -38,3 +38,16 @@ POS: `left` `center` `right`
 
 ### Basic Images
 * `img-fluid` responsive images
+* `rounded`, `rounded-DIR` round edges  
+`top`, `right`, `bottom`, `left`, `circle`, `rounded-0`
+* `img-thumbnail` rounded 1px border 
+
+### Aligning Images  
+* `float-left` or `float-right`
+* `text-center` center inline
+* `mx-auto` center block
+
+### Figures 
+* `figure` on the `<figure>` tag
+* `figure-img` on the images
+* `figure-caption` on the text
