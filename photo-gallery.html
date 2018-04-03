@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Masonry Photo Gallery with a Modal Display</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		body{padding-top: 80px;}
+		.card,.card-img-top{border-radius: 0;border: none;}
+		#img-modal img{width: 100%;}
+		.modal-backdrop.show {opacity:.8;}
+	</style>
+</head>
+<body>
+	<nav class="navbar fixed-top navbar-dark bg-dark">
+		<a href="#" class="navbar-brand">Masonry</a>
+	</nav>
+	<div class="card-columns p-3">
+		<div class="card">
+			<img src="img/nathan-dumlao-608723-unsplash.jpg" alt="Be Optimistic" class="card-img-top">
+		</div>
+		<div class="card">
+			<img src="img/drew-graham-310366-unsplash.jpg" alt="Simplicity is the key to Brilliance" class="card-img-top">
+		</div>
+		<div class="card">
+			<img src="img/the-creative-exchange-402565-unsplash.jpg" alt="Creativity doesn't need limits" class="card-img-top">
+		</div>
+		<div class="card">
+			<img src="img/martin-shreder-349256-unsplash.jpg" alt="Do What is Great" class="card-img-top">
+		</div>
+		<div class="card">
+			<img src="img/andrew-neel-178721-unsplash.jpg" alt="Explore" class="card-img-top">
+		</div>
+		<div class="card">
+			<img src="img/kevin-bhagat-343433-unsplash.jpg" alt="" class="card-img-top">
+		</div>
+		<div class="card">
+			<img src="img/jon-tyson-232630-unsplash.jpg" alt="" class="card-img-top">
+		</div>
+	</div><!-- card-columns -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="img-modal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body p-0">
+					<img src="" alt="" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div><!-- modal -->
+	<footer>
+		<div class="container text-center">
+			<div class="row">
+				<div class="col">
+					<p><small>Photos by Nathan Dumlao, Drew Graham, The Creative Exchange, Martin Shreder, Andrew Neel,Kevin Bhagat &amp; Jon Tyson on Unsplash.</small></p>
+			</div>
+			</div>
+		</div><!-- container -->
+	</footer>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$('.card-img-top').on('click', function(){
+			var imgURL = $(this).attr('src');
+			var $modal = $('#img-modal');
+			$modal.find('.modal-body img').attr('src', imgURL);
+			$modal.modal('show');
+		});
+	</script>
+</body>
+</html>
