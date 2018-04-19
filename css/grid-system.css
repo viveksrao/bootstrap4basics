@@ -1,0 +1,11 @@
+body{
+	padding-top: 10rem;
+}
+.bootstrap-demo [class*='col']{
+	background-color: #2d3750;
+	color: white;
+	border-right: 1px solid white;
+}
+.bootstrap-demo .row{
+	margin-bottom: 1rem;
+}
