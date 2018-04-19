@@ -11,6 +11,7 @@ A One Page Landing Pages built using Bootstrap 4.
 * [Grid Containers, Rows, and Columns](https://viveksrao.github.io/built-with-bootstrap4/grid-system/01-containers-rows-columns/index.html)
 * [Column Sizing](https://viveksrao.github.io/built-with-bootstrap4/grid-system/02-column-sizing/index.html)
 * [Responsive Classes](https://viveksrao.github.io/built-with-bootstrap4/grid-system/03-responsive-classes/index.html)
+* [Alignment Options](https://viveksrao.github.io/built-with-bootstrap4/grid-system/04-alignment-options/index.html)
 
 
 ### Alignment Utilities
