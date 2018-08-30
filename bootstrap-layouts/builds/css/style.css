@@ -35,6 +35,8 @@
   /* Override Variables */
   --font-family-sans-serif: 'Source Sans Pro',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   --gray-dark: #404040;
+  --light-blue: #e1f7f5;
+  --purple: #533777;
   
   /* Page Variables */
   --font-family-serif: Merriweather, serif;
@@ -71,6 +73,37 @@ body{
 
 .site-header .page-section-text{
   font-size: 1.2em;
+}
+
+#page-multicolumn{
+  background: var(--light-blue);
+}
+
+.page-section-header .page-section-title{
+  font-size: 4em;
+  font-family: var(--font-family-sans-serif);
+  font-weight: 200;
+  color: var(--purple);
+}
+
+.page-section-header .page-section-text{
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+.layout-media .layout-image{
+  max-width: 200px;
+}
+
+.layout-media .layout-title{
+  color: var(--purple);
+  font-family: var(--font-family-sans-serif);
+  font-weight: 200;
+  font-size: 1.6em;
+}
+
+.layout-photogrid .layout-image{
+  background: var(--light-blue);
 }
 
 .layout-social .layout-icon{
