@@ -2,6 +2,7 @@
 A One Page Landing Pages built using Bootstrap 4.
 
 ## Examples  
+* [Bootstrap Layouts](https://viveksrao.github.io/built-with-bootstrap4/bootstrap-layouts/builds/index.html)
 * [Full Stack Conf](https://viveksrao.github.io/built-with-bootstrap4/)  
 * [Free Trial Landing Page](https://viveksrao.github.io/built-with-bootstrap4/free-trial.html)
 * [Product Page](https://viveksrao.github.io/built-with-bootstrap4/product.html)
