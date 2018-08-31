@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Bootstrap 4 Layouts</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".site-nav" data-offset="55">
   <header id="page-hero" class="site-header">
-    <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark">
+    <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#page-hero"><i class="fas fa-cube"></i> Layout Components</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
@@ -26,7 +26,7 @@
             <a class="nav-item nav-link" href="#page-photogrid">grid</a>
             <a class="nav-item nav-link" href="#page-carousel">carousel</a>
             <a class="nav-item nav-link" href="#page-nested">nested</a>
-            <a class="nav-item nav-link" href="#page-icons">icons</a>
+            <a class="nav-item nav-link" href="#page-iconcolumns">icons</a>
             <a class="nav-item nav-link" href="#page-floater">floater</a>
             <a class="nav-item nav-link" href="#page-cards">cards</a>
           </div>
@@ -36,7 +36,7 @@
     <section class="layout-hero d-flex align-items-center text-light text-center">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-11 col-sm-10 col-md-8">
+          <div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
             <h3 class="page-section-title">Bootstrap 4 Layouts</h3>
             <p class="page-section-text">This layout uses multiple column rules so that how many columns each group takes depends on the width of the browser.</p>
           </div>
@@ -113,7 +113,7 @@
     </header>
     <section class="layout-media container my-5">
       <div class="row justify-content-center">
-        <div class="col-lg-8">
+        <div class="col-lg-8 layout-animation invisible">
           <section class="media">
             <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592996/built-with-bootstrap4/bootstrap-layouts/media01.gif" alt="Media Image 01">
             <div class="media-body">
@@ -143,40 +143,64 @@
     <section class="layout-photogrid">
       <div class="row justify-content-center no-gutters">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster01_tn.svg" alt="Monster Image 01">
+          <a href="#" data-toggle="modal" data-target="#site-modal" data-highres="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592998/built-with-bootstrap4/bootstrap-layouts/monster01.svg">
+            <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster01_tn.svg" alt="Monster Image 01">
+          </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster02_tn.svg" alt="Monster Image 02">
+          <a href="#" data-toggle="modal" data-target="#site-modal" data-highres="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592998/built-with-bootstrap4/bootstrap-layouts/monster02.svg">
+            <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster02_tn.svg" alt="Monster Image 02">
+          </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster03_tn.svg" alt="Monster Image 03">
+          <a href="#" data-toggle="modal" data-target="#site-modal" data-highres="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592998/built-with-bootstrap4/bootstrap-layouts/monster03.svg">
+            <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster03_tn.svg" alt="Monster Image 03">
+          </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster04_tn.svg" alt="Monster Image 04">
+          <a href="#" data-toggle="modal" data-target="#site-modal" data-highres="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592998/built-with-bootstrap4/bootstrap-layouts/monster04.svg">
+            <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster04_tn.svg" alt="Monster Image 04">
+          </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster05_tn.svg" alt="Monster Image 05">
+          <a href="#" data-toggle="modal" data-target="#site-modal" data-highres="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592998/built-with-bootstrap4/bootstrap-layouts/monster05.svg">
+            <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster05_tn.svg" alt="Monster Image 05">
+          </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster06_tn.svg" alt="Monster Image 06">
+          <a href="#" data-toggle="modal" data-target="#site-modal" data-highres="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592998/built-with-bootstrap4/bootstrap-layouts/monster06.svg">
+            <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster06_tn.svg" alt="Monster Image 06">
+
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster07_tn.svg" alt="Monster Image 07">
+          <a href="#" data-toggle="modal" data-target="#site-modal" data-highres="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592998/built-with-bootstrap4/bootstrap-layouts/monster07.svg">
+            <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster07_tn.svg" alt="Monster Image 07">
+          </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster08_tn.svg" alt="Monster Image 08">
+          <a href="#" data-toggle="modal" data-target="#site-modal" data-highres="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592998/built-with-bootstrap4/bootstrap-layouts/monster08.svg">
+            <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster08_tn.svg" alt="Monster Image 08">
+          </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster09_tn.svg" alt="Monster Image 09">
+          <a href="#" data-toggle="modal" data-target="#site-modal" data-highres="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592998/built-with-bootstrap4/bootstrap-layouts/monster09.svg">
+            <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster09_tn.svg" alt="Monster Image 09">
+          </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster10_tn.svg" alt="Monster Image 10">
+          <a href="#" data-toggle="modal" data-target="#site-modal" data-highres="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592998/built-with-bootstrap4/bootstrap-layouts/monster10.svg">
+            <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster10_tn.svg" alt="Monster Image 10">
+          </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster11_tn.svg" alt="Monster Image 11">
+          <a href="#" data-toggle="modal" data-target="#site-modal" data-highres="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592998/built-with-bootstrap4/bootstrap-layouts/monster11.svg">
+            <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster11_tn.svg" alt="Monster Image 11">
+          </a>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster12_tn.svg" alt="Monster Image 12">
+          <a href="#" data-toggle="modal" data-target="#site-modal" data-highres="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592998/built-with-bootstrap4/bootstrap-layouts/monster12.svg">
+            <img class="layout-image" src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1535592997/built-with-bootstrap4/bootstrap-layouts/monster12_tn.svg" alt="Monster Image 12">
+          </a>
         </div>
       </div>
     </section>
@@ -329,6 +353,13 @@
       </a>
     </section>
   </footer>
+  <article id="site-modal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <img class="img-fluid" data-dismiss="modal" src="#" alt="Modal Photo">
+      </div>
+    </div>
+  </article>
   <script src="js/lib/jquery.min.js"></script>
   <script src="js/lib/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
