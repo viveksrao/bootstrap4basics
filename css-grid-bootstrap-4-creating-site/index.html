@@ -20,6 +20,27 @@
     <title>La Galerie d'art de Rembrandt</title>
   </head>
   <body id="top" class="bg-dark">
+    <!-- 00 NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a href="#top" class="navbar-brand text-danger">La Galerie d'art de Rembrandt</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-items"><a href="#s2_trio" class="nav-link">Works</a></li>
+            <li class="nav-items"><a href="#s3_painting_of_the_week" class="nav-link">Highlighted Painting</a></li>
+            <li class="nav-items"><a href="#s4_about" class="nav-link">About</a></li>
+            <li class="nav-items"><a href="#s5_prints" class="nav-link">Prints</a></li>
+            <li class="nav-items"><a href="#s6_paintings" class="nav-link">Paintings</a></li>
+            <li class="nav-items"><a href="#s7_drawings" class="nav-link">Drawings</a></li>
+            <li class="nav-items"><a href="#s8_contact" class="nav-link">Contact</a></li>
+            <li class="nav-items"><a href="#s9_footer" class="nav-link">Info</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- s1_header -->
     <section id="s1_header">
       <aside class="container">
@@ -77,7 +98,7 @@
         <h1 class="text-danger">Highlighted Painting</h1>
         <img
           src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1550689097/built-with-bootstrap4/css-grid-bootstrap-4-creating-site/s3-painting-of-the-week-Rembrandt_castello_sulla_riva_1640-1650.png"
-          alt="Painting of the week" class="img-fluid my-3 border border-light">
+          alt="Painting of the week" class="img-fluid my-3 border border-light" style="border-width:3px!important;">
         <p class="text-white">Castle Overlooking a River (circa 1645)</p>
       </div>
     </section>
@@ -161,16 +182,16 @@
         <h1 class="text-danger">Paintings</h1>
         <aside>
           <div class="my-paintings-container my-paintings-area my-cursor">
-            <div class="painting-1"></div>
-            <div class="painting-2"></div>
-            <div class="painting-3"></div>
-            <div class="painting-4"></div>
-            <div class="painting-5"></div>
-            <div class="painting-6"></div>
-            <div class="painting-7"></div>
-            <div class="painting-8"></div>
-            <div class="painting-9"></div>
-            <div class="painting-10"></div>
+            <div class="painting-1" data-toggle="modal" data-target="#painting1"></div>
+            <div class="painting-2" data-toggle="modal" data-target="#painting2"></div>
+            <div class="painting-3" data-toggle="modal" data-target="#painting3"></div>
+            <div class="painting-4" data-toggle="modal" data-target="#painting4"></div> 
+            <div class="painting-5" data-toggle="modal" data-target="#painting5"></div>
+            <div class="painting-6" data-toggle="modal" data-target="#painting6"></div>
+            <div class="painting-7" data-toggle="modal" data-target="#painting7"></div>
+            <div class="painting-8" data-toggle="modal" data-target="#painting8"></div>
+            <div class="painting-9" data-toggle="modal" data-target="#painting9"></div>
+            <div class="painting-10" data-toggle="modal" data-target="#painting10"></div>
           </div>
           <img src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1550688913/built-with-bootstrap4/css-grid-bootstrap-4-creating-site/interface-imgs/s6-painting.png" alt="Windmill" class="img-fluid windmill">
         </aside>
@@ -258,17 +279,21 @@
       </div>
     </section>
     <!-- s9_footer -->
-    <section class="text-white" id="s9_footer">
+    <section class="py-5 text-white" id="s9_footer">
       <div class="container s9_footer_grid py-5">
         <aside class="footer_hours py-5" style="grid-area: footer_hours;">
           <h1 class="text-danger h5">La Galerie d'art de Rembrandt</h1>
           <p>Tuesday - Friday: 10:00 am - 5:00 pm<br/>
               Saturday: 10:00 am - 3:00 pm<br/>
                 Closed Sundays and Mondays</p>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-linkedin-in"></i>
-          <i class="fab fa-instagram"></i>
+          <div class="btn-toolbar" role="toolbar" aria-label="Social Media Buttons">
+            <div class="btn-group m-2 btn-group-sm">
+              <button type="button" class="btn btn-info"><i class="fab fa-facebook"></i></button>
+              <button type="button" class="btn btn-info"><i class="fab fa-twitter"></i></button>
+              <button type="button" class="btn btn-info"><i class="fab fa-linkedin-in"></i></button>
+              <button type="button" class="btn btn-info"><i class="fab fa-instagram"></i></button>
+            </div>
+          </div>
         </aside>
         <aside class="footer_menu" style="grid-area: footer_menu;">
           <h1 class="text-danger h5">Menu</h1>
@@ -348,6 +373,7 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $('a[href^="#"]').on('click',function (e) {e.preventDefault();
@@ -361,5 +387,155 @@
         });
       });
     </script>
+    <!-- ------------------ PAINTING-1 ------------------------------ -->
+    <div class="modal fade" id="painting1" tabindex="1" role="dialog" aria-labelledby="Rembrandt Painting 1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1550688939/built-with-bootstrap4/css-grid-bootstrap-4-creating-site/paintings-img/1920px-P1150002_Cognacq-Jay_Rembrandt_anesse_de_Balaam_rwk.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------ PAINTING-2 ------------------------------ -->
+    <div class="modal fade" id="painting2" tabindex="1" role="dialog" aria-labelledby="Rembrandt Painting 1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1550688938/built-with-bootstrap4/css-grid-bootstrap-4-creating-site/paintings-img/1920px-Rembrandt_-_Rembrandt_and_Saskia_in_the_Scene_of_the_Prodigal_Son_-_Google_Art_Project.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------ PAINTING-3 ------------------------------ -->
+    <div class="modal fade" id="painting3" tabindex="1" role="dialog" aria-labelledby="Rembrandt Painting 1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1550688938/built-with-bootstrap4/css-grid-bootstrap-4-creating-site/paintings-img/1920px-Rembrandt_van_Rijn_-_Portrait_of_Willem_Burchgraeff_-_O_854_-_Slovak_National_Gallery.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------ PAINTING-4 ------------------------------ -->
+    <div class="modal fade" id="painting4" tabindex="1" role="dialog" aria-labelledby="Rembrandt Painting 1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1550688938/built-with-bootstrap4/css-grid-bootstrap-4-creating-site/paintings-img/1920px-Rembrandt_van_Rijn_198.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------ PAINTING-5 ------------------------------ -->
+    <div class="modal fade" id="painting5" tabindex="1" role="dialog" aria-labelledby="Rembrandt Painting 1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1550688938/built-with-bootstrap4/css-grid-bootstrap-4-creating-site/paintings-img/2560px-Rembrandt_Harmensz._van_Rijn_-_Old_Man_with_a_Gold_Chain_-_Google_Art_Project.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------ PAINTING-6 ------------------------------ -->
+    <div class="modal fade" id="painting6" tabindex="1" role="dialog" aria-labelledby="Rembrandt Painting 1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1550688938/built-with-bootstrap4/css-grid-bootstrap-4-creating-site/paintings-img/2560px-Rembrandt_Harmensz._van_Rijn_-_Zelfportret_op_jeugdige_leeftijd_-_Google_Art_Project.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------ PAINTING-7 ------------------------------ -->
+    <div class="modal fade" id="painting7" tabindex="1" role="dialog" aria-labelledby="Rembrandt Painting 1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1550688938/built-with-bootstrap4/css-grid-bootstrap-4-creating-site/paintings-img/2880px-Rembrandt_The_Artist_in_his_studio.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------ PAINTING-8 ------------------------------ -->
+    <div class="modal fade" id="painting8" tabindex="1" role="dialog" aria-labelledby="Rembrandt Painting 1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1550688938/built-with-bootstrap4/css-grid-bootstrap-4-creating-site/paintings-img/Rembrandt_-_Portrait_of_a_Woman_with_Gloves_-_NGI.808.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------ PAINTING-9 ------------------------------ -->
+    <div class="modal fade" id="painting9" tabindex="1" role="dialog" aria-labelledby="Rembrandt Painting 1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1550688938/built-with-bootstrap4/css-grid-bootstrap-4-creating-site/paintings-img/Rembrandt_van_Rijn_197.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------ PAINTING-10 ------------------------------ -->
+    <div class="modal fade" id="painting10" tabindex="1" role="dialog" aria-labelledby="Rembrandt Painting 1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://res.cloudinary.com/dq72qr6xi/image/upload/v1550688938/built-with-bootstrap4/css-grid-bootstrap-4-creating-site/paintings-img/Rembrandt-SMELL.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

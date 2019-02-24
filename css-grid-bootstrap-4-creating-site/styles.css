@@ -195,6 +195,13 @@
   cursor: pointer;
   outline: none;
 }
+
+@media (max-width: 576px){
+  .windmill{
+    display: none;
+  }
+}
+
 .painting-1{
   background: url('https://res.cloudinary.com/dq72qr6xi/image/upload/v1550688939/built-with-bootstrap4/css-grid-bootstrap-4-creating-site/paintings-img/1920px-P1150002_Cognacq-Jay_Rembrandt_anesse_de_Balaam_rwk.jpg');
   background-position: center;
